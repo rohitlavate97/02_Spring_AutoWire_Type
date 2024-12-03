@@ -3,7 +3,7 @@ package service;
 import beans.IEngine;
 
 public class CarService {
-    IEngine engine;
+    IEngine engine;   //this variable is used for dependency injectiion in byType
     public void setEngine(IEngine engine){
         this.engine=engine;
     }
