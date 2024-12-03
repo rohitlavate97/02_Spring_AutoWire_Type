@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--       <bean id="engine" class="beans.DieselEngine" autowire-candidate="false"/>-->
+       <bean id="engine" class="beans.DieselEngine" primary="true"/>
+       <bean id="petrol" class="beans.PetrolEngine"/>
+<!--       <bean id="car" class="service.CarService" autowire="byName">-->
+       <bean id="car" class="service.CarService" autowire="byType">
+       </bean>
+</beans>
