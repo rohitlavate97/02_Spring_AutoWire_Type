@@ -7,7 +7,7 @@ import service.CarService;
 public class CarAppTest {
     public static void main(String[] args) {
 
-        ApplicationContext context=new ClassPathXmlApplicationContext("Beans.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("Beans2.xml");
         CarService carService=context.getBean(CarService.class);
         carService.drive();
 //        CarService c1=context.getBean(CarService.class);
